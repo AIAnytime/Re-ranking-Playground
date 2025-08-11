@@ -27,8 +27,8 @@
 
 ```bash
 # Clone repository
-git clone <repository-url>
-cd re-ranking-playground
+git clone https://github.com/AIAnytime/Re-ranking-Playground
+cd Re-ranking-Playground
 
 # Create environment file
 echo "OPENAI_API_KEY=your_openai_key_here" > .env
