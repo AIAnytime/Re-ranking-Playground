@@ -70,6 +70,8 @@ uvicorn api:app --reload
 4. **Visualization**: Interactive charts and comparisons
 5. **Export**: Download results as JSON
 
+![Architecture Diagram](graphviz-arch.svg)
+
 ## The "Lost in the Middle" Problem
 
 Stanford research shows LLMs struggle with information in the middle of long contexts, significantly impacting RAG systems:
