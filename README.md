@@ -1,11 +1,13 @@
 # 🔄 Re-ranking Playground
 
-> A comprehensive interactive platform for exploring and comparing 5 different document re-ranking techniques with real-time evaluation and visualization.
+> An interactive platform for exploring and comparing 5 different document re-ranking techniques with real-time evaluation and visualization for improving the accuracy of RAG systems.
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)](https://streamlit.io)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-green.svg)](https://fastapi.tiangolo.com)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+![System Context](sct.png)
 
 ## Features
 
