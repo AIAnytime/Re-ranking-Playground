@@ -1,0 +1,17 @@
+streamlit
+pandas
+plotly
+numpy
+scikit-learn
+transformers
+sentence-transformers
+openai
+python-dotenv
+pydantic
+cohere
+lightgbm
+fastapi
+uvicorn
+requests
+aiohttp
+
