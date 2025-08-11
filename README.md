@@ -7,7 +7,7 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-green.svg)](https://fastapi.tiangolo.com)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-## ✨ Features
+## Features
 
 - **5 Re-ranking Techniques**: Cross-Encoder, LLM-based, Cohere API, Hybrid Pipeline, Learning to Rank
 - **Interactive Playground**: Custom queries/documents + 4 preset categories (Technology, Science, Business, Healthcare)
@@ -16,7 +16,7 @@
 - **Educational Content**: Code examples, case studies, and "Lost in the Middle" problem explanation
 - **Modern UI**: Streamlit interface with session persistence, loaders, and downloadable JSON results
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.8+
@@ -52,7 +52,7 @@ uvicorn api:app --reload
 ```
 🌐 **API Docs**: http://localhost:8000/docs
 
-## 📊 Re-ranking Techniques
+## Re-ranking Techniques
 
 | Technique | Accuracy | Speed | Cost | Best Use Case |
 |-----------|----------|-------|------|---------------|
@@ -62,7 +62,7 @@ uvicorn api:app --reload
 | **Hybrid Pipeline** | High (0.86-0.93) | Medium (~200ms/doc) | Low | Balanced performance |
 | **Learning to Rank** | Medium (0.75-0.85) | Very Fast (~10ms/doc) | Free | High-volume systems |
 
-## 🎯 How It Works
+## How It Works
 
 1. **Input**: Query + Document collection
 2. **Processing**: Apply selected re-ranking technique(s)
@@ -70,7 +70,7 @@ uvicorn api:app --reload
 4. **Visualization**: Interactive charts and comparisons
 5. **Export**: Download results as JSON
 
-## 🔬 The "Lost in the Middle" Problem
+## The "Lost in the Middle" Problem
 
 Stanford research shows LLMs struggle with information in the middle of long contexts, significantly impacting RAG systems:
 
@@ -78,7 +78,7 @@ Stanford research shows LLMs struggle with information in the middle of long con
 - **Impact**: Up to 40% degradation in search quality
 - **Solution**: Re-ranking optimizes document ordering for better LLM processing
 
-## 🛠️ API Reference
+## API Reference
 
 ### Endpoints
 - `POST /rerank` - Re-rank documents using specified technique
@@ -97,7 +97,7 @@ response = requests.post("http://localhost:8000/rerank", json={
 })
 ```
 
-## 🏗️ Tech Stack
+## Tech Stack
 
 - **Frontend**: Streamlit + Custom CSS
 - **Backend**: FastAPI + Async Support
@@ -105,7 +105,7 @@ response = requests.post("http://localhost:8000/rerank", json={
 - **Visualization**: Plotly Interactive Charts
 - **ML**: scikit-learn, LightGBM, NumPy
 
-## 📚 References
+## References
 
 - [Lost in the Middle (Stanford, 2023)](https://cs.stanford.edu/~nfliu/papers/lost-in-the-middle.tacl2023.pdf)
 - [MS MARCO Dataset](https://microsoft.github.io/msmarco/)
