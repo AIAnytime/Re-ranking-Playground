@@ -1,0 +1,348 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1196pt" height="722pt" viewBox="0.00 0.00 1196.00 721.85">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 717.85)">
+<title>ReRankingPlayground</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-717.85 1192,-717.85 1192,4 -4,4"/>
+<g id="clust1" class="cluster">
+<title>cluster_input</title>
+<polygon fill="lightgray" stroke="lightgray" points="430,-580.45 430,-705.85 632,-705.85 632,-580.45 430,-580.45"/>
+<text text-anchor="middle" x="531" y="-691.05" font-family="Arial" font-size="12.00">📥 INPUT LAYER</text>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_techniques</title>
+<polygon fill="lightblue" stroke="lightblue" points="42,-426.25 42,-551.65 1003,-551.65 1003,-426.25 42,-426.25"/>
+<text text-anchor="middle" x="522.5" y="-536.85" font-family="Arial" font-size="12.00">🔄 RE-RANKING TECHNIQUES</text>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_details</title>
+<polygon fill="white" stroke="gray" stroke-dasharray="5,2" points="8,-235.73 8,-397.45 436,-397.45 436,-235.73 8,-235.73"/>
+<text text-anchor="middle" x="222" y="-382.65" font-family="Arial" font-size="12.00">🔍 PROCESSING DETAILS</text>
+</g>
+<g id="clust4" class="cluster">
+<title>cluster_evaluation</title>
+<polygon fill="lightyellow" stroke="lightyellow" points="38,-90.8 38,-206.93 776,-206.93 776,-90.8 38,-90.8"/>
+<text text-anchor="middle" x="407" y="-192.13" font-family="Arial" font-size="12.00">📊 EVALUATION METRICS</text>
+</g>
+<g id="clust5" class="cluster">
+<title>cluster_output</title>
+<polygon fill="lightcoral" stroke="lightcoral" points="444,-253.99 444,-379.19 618,-379.19 618,-253.99 444,-253.99"/>
+<text text-anchor="middle" x="531" y="-364.39" font-family="Arial" font-size="12.00">📤 OUTPUT LAYER</text>
+</g>
+<g id="clust6" class="cluster">
+<title>cluster_system</title>
+<polygon fill="lightgray" stroke="lightgray" points="784,-8 784,-186.07 1004,-186.07 1004,-8 784,-8"/>
+<text text-anchor="middle" x="894" y="-171.27" font-family="Arial" font-size="12.00">🏗️ SYSTEM ARCHITECTURE</text>
+</g>
+<g id="clust7" class="cluster">
+<title>cluster_legend</title>
+<polygon fill="white" stroke="white" points="640,-605.95 640,-680.35 1180,-680.35 1180,-605.95 640,-605.95"/>
+<text text-anchor="middle" x="910" y="-665.55" font-family="Arial" font-size="12.00">🔍 LEGEND</text>
+</g>
+<!-- input -->
+<g id="node1" class="node">
+<title>input</title>
+<path fill="#e3f2fd" stroke="#1976d2" stroke-width="2" d="M611.85,-675.45C611.85,-675.45 450.15,-675.45 450.15,-675.45 444.15,-675.45 438.15,-669.45 438.15,-663.45 438.15,-663.45 438.15,-600.45 438.15,-600.45 438.15,-594.45 444.15,-588.45 450.15,-588.45 450.15,-588.45 611.85,-588.45 611.85,-588.45 617.85,-588.45 623.85,-594.45 623.85,-600.45 623.85,-600.45 623.85,-663.45 623.85,-663.45 623.85,-669.45 617.85,-675.45 611.85,-675.45"/>
+<text text-anchor="middle" x="531" y="-661.55" font-family="Arial" font-size="11.00">User Query</text>
+<text text-anchor="middle" x="531" y="-648.35" font-family="Arial" font-size="11.00">"machine learning applications"</text>
+<text text-anchor="middle" x="531" y="-622.15" font-family="Arial" font-size="11.00">Document Collection</text>
+<text text-anchor="middle" x="531" y="-608.95" font-family="Arial" font-size="11.00">["AI in healthcare", "ML in finance",</text>
+<text text-anchor="middle" x="531" y="-595.75" font-family="Arial" font-size="11.00">"Deep learning models", ...]</text>
+</g>
+<!-- ce -->
+<g id="node2" class="node">
+<title>ce</title>
+<path fill="#e8f5e8" stroke="#388e3c" stroke-width="2" d="M226.36,-521.25C226.36,-521.25 61.64,-521.25 61.64,-521.25 55.64,-521.25 49.64,-515.25 49.64,-509.25 49.64,-509.25 49.64,-446.25 49.64,-446.25 49.64,-440.25 55.64,-434.25 61.64,-434.25 61.64,-434.25 226.36,-434.25 226.36,-434.25 232.36,-434.25 238.36,-440.25 238.36,-446.25 238.36,-446.25 238.36,-509.25 238.36,-509.25 238.36,-515.25 232.36,-521.25 226.36,-521.25"/>
+<text text-anchor="middle" x="144" y="-507.35" font-family="Arial" font-size="11.00">1️⃣ CROSS-ENCODER</text>
+<text text-anchor="middle" x="144" y="-481.15" font-family="Arial" font-size="11.00">• BERT-based joint encoding</text>
+<text text-anchor="middle" x="144" y="-467.95" font-family="Arial" font-size="11.00">• High accuracy (0.85-0.95)</text>
+<text text-anchor="middle" x="144" y="-454.75" font-family="Arial" font-size="11.00">• Slower processing (~100ms/doc)</text>
+<text text-anchor="middle" x="144" y="-441.55" font-family="Arial" font-size="11.00">• Local, no API costs</text>
+</g>
+<!-- input&#45;&gt;ce -->
+<g id="edge1" class="edge">
+<title>input-&gt;ce</title>
+<path fill="none" stroke="#333333" d="M437.36,-613.08C380.82,-600.28 308.29,-580.2 248,-551.65 234.37,-545.19 220.6,-536.99 207.74,-528.42"/>
+<polygon fill="#333333" stroke="#333333" points="210.03,-525.74 199.79,-522.99 206.08,-531.52 210.03,-525.74"/>
+<text text-anchor="middle" x="318.05" y="-562.35" font-family="Arial" font-size="9.00">query + docs</text>
+</g>
+<!-- llm -->
+<g id="node3" class="node">
+<title>llm</title>
+<path fill="#fce4ec" stroke="#c2185b" stroke-width="2" d="M801.32,-521.25C801.32,-521.25 646.68,-521.25 646.68,-521.25 640.68,-521.25 634.68,-515.25 634.68,-509.25 634.68,-509.25 634.68,-446.25 634.68,-446.25 634.68,-440.25 640.68,-434.25 646.68,-434.25 646.68,-434.25 801.32,-434.25 801.32,-434.25 807.32,-434.25 813.32,-440.25 813.32,-446.25 813.32,-446.25 813.32,-509.25 813.32,-509.25 813.32,-515.25 807.32,-521.25 801.32,-521.25"/>
+<text text-anchor="middle" x="724" y="-507.35" font-family="Arial" font-size="11.00">2️⃣ LLM-BASED</text>
+<text text-anchor="middle" x="724" y="-481.15" font-family="Arial" font-size="11.00">• OpenAI GPT-3.5/4</text>
+<text text-anchor="middle" x="724" y="-467.95" font-family="Arial" font-size="11.00">• Semantic reasoning</text>
+<text text-anchor="middle" x="724" y="-454.75" font-family="Arial" font-size="11.00">• Very high accuracy (0.90-0.98)</text>
+<text text-anchor="middle" x="724" y="-441.55" font-family="Arial" font-size="11.00">• API-dependent, costly</text>
+</g>
+<!-- input&#45;&gt;llm -->
+<g id="edge2" class="edge">
+<title>input-&gt;llm</title>
+<path fill="none" stroke="#333333" d="M586.05,-587.54C609.07,-569.39 635.97,-548.17 659.88,-529.32"/>
+<polygon fill="#333333" stroke="#333333" points="662.01,-532.1 667.69,-523.16 657.67,-526.6 662.01,-532.1"/>
+<text text-anchor="middle" x="641.84" y="-562.35" font-family="Arial" font-size="9.00">query + docs</text>
+</g>
+<!-- cohere -->
+<g id="node4" class="node">
+<title>cohere</title>
+<path fill="#fce4ec" stroke="#c2185b" stroke-width="2" d="M982.51,-521.25C982.51,-521.25 843.49,-521.25 843.49,-521.25 837.49,-521.25 831.49,-515.25 831.49,-509.25 831.49,-509.25 831.49,-446.25 831.49,-446.25 831.49,-440.25 837.49,-434.25 843.49,-434.25 843.49,-434.25 982.51,-434.25 982.51,-434.25 988.51,-434.25 994.51,-440.25 994.51,-446.25 994.51,-446.25 994.51,-509.25 994.51,-509.25 994.51,-515.25 988.51,-521.25 982.51,-521.25"/>
+<text text-anchor="middle" x="913" y="-507.35" font-family="Arial" font-size="11.00">3️⃣ COHERE API</text>
+<text text-anchor="middle" x="913" y="-481.15" font-family="Arial" font-size="11.00">• Production-ready service</text>
+<text text-anchor="middle" x="913" y="-467.95" font-family="Arial" font-size="11.00">• Fast &amp; reliable (~50ms/doc)</text>
+<text text-anchor="middle" x="913" y="-454.75" font-family="Arial" font-size="11.00">• High accuracy (0.88-0.94)</text>
+<text text-anchor="middle" x="913" y="-441.55" font-family="Arial" font-size="11.00">• Commercial solution</text>
+</g>
+<!-- input&#45;&gt;cohere -->
+<g id="edge3" class="edge">
+<title>input-&gt;cohere</title>
+<path fill="none" stroke="#333333" d="M616.12,-587.49C622.76,-584.88 629.43,-582.49 636,-580.45 715.89,-555.65 745.43,-585.34 822,-551.65 835.01,-545.92 847.73,-537.85 859.34,-529.16"/>
+<polygon fill="#333333" stroke="#333333" points="861.48,-531.93 867.21,-523.01 857.17,-526.41 861.48,-531.93"/>
+<text text-anchor="middle" x="826.23" y="-562.35" font-family="Arial" font-size="9.00">query + docs</text>
+</g>
+<!-- hybrid -->
+<g id="node5" class="node">
+<title>hybrid</title>
+<path fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2" d="M415.49,-521.25C415.49,-521.25 268.51,-521.25 268.51,-521.25 262.51,-521.25 256.51,-515.25 256.51,-509.25 256.51,-509.25 256.51,-446.25 256.51,-446.25 256.51,-440.25 262.51,-434.25 268.51,-434.25 268.51,-434.25 415.49,-434.25 415.49,-434.25 421.49,-434.25 427.49,-440.25 427.49,-446.25 427.49,-446.25 427.49,-509.25 427.49,-509.25 427.49,-515.25 421.49,-521.25 415.49,-521.25"/>
+<text text-anchor="middle" x="342" y="-507.35" font-family="Arial" font-size="11.00">4️⃣ HYBRID PIPELINE</text>
+<text text-anchor="middle" x="342" y="-481.15" font-family="Arial" font-size="11.00">• Cross-Encoder + TF-IDF</text>
+<text text-anchor="middle" x="342" y="-467.95" font-family="Arial" font-size="11.00">• Balanced performance</text>
+<text text-anchor="middle" x="342" y="-454.75" font-family="Arial" font-size="11.00">• Best of both worlds</text>
+<text text-anchor="middle" x="342" y="-441.55" font-family="Arial" font-size="11.00">• Medium speed (~200ms/doc)</text>
+</g>
+<!-- input&#45;&gt;hybrid -->
+<g id="edge4" class="edge">
+<title>input-&gt;hybrid</title>
+<path fill="none" stroke="#333333" d="M477.09,-587.54C454.55,-569.39 428.2,-548.17 404.79,-529.32"/>
+<polygon fill="#333333" stroke="#333333" points="407.14,-526.71 397.16,-523.17 402.75,-532.17 407.14,-526.71"/>
+<text text-anchor="middle" x="479.32" y="-562.35" font-family="Arial" font-size="9.00">query + docs</text>
+</g>
+<!-- ltr -->
+<g id="node6" class="node">
+<title>ltr</title>
+<path fill="#fff8e1" stroke="#f57c00" stroke-width="2" d="M604.64,-521.25C604.64,-521.25 457.36,-521.25 457.36,-521.25 451.36,-521.25 445.36,-515.25 445.36,-509.25 445.36,-509.25 445.36,-446.25 445.36,-446.25 445.36,-440.25 451.36,-434.25 457.36,-434.25 457.36,-434.25 604.64,-434.25 604.64,-434.25 610.64,-434.25 616.64,-440.25 616.64,-446.25 616.64,-446.25 616.64,-509.25 616.64,-509.25 616.64,-515.25 610.64,-521.25 604.64,-521.25"/>
+<text text-anchor="middle" x="531" y="-507.35" font-family="Arial" font-size="11.00">5️⃣ LEARNING TO RANK</text>
+<text text-anchor="middle" x="531" y="-481.15" font-family="Arial" font-size="11.00">• Traditional ML (LightGBM)</text>
+<text text-anchor="middle" x="531" y="-467.95" font-family="Arial" font-size="11.00">• Hand-crafted features</text>
+<text text-anchor="middle" x="531" y="-454.75" font-family="Arial" font-size="11.00">• Very fast (~10ms/doc)</text>
+<text text-anchor="middle" x="531" y="-441.55" font-family="Arial" font-size="11.00">• Medium accuracy (0.75-0.85)</text>
+</g>
+<!-- input&#45;&gt;ltr -->
+<g id="edge5" class="edge">
+<title>input-&gt;ltr</title>
+<path fill="none" stroke="#333333" d="M531,-587.74C531,-570.87 531,-551.33 531,-533.5"/>
+<polygon fill="#333333" stroke="#333333" points="534.5,-533.58 531,-523.58 527.5,-533.58 534.5,-533.58"/>
+<text text-anchor="middle" x="556.89" y="-562.35" font-family="Arial" font-size="9.00">query + docs</text>
+</g>
+<!-- ce_process -->
+<g id="node7" class="node">
+<title>ce_process</title>
+<ellipse fill="#e8f5e8" stroke="black" cx="127" cy="-305.39" rx="111.18" ry="61.66"/>
+<text text-anchor="middle" x="127" y="-335.09" font-family="Arial" font-size="11.00">Cross-Encoder Process:</text>
+<text text-anchor="middle" x="127" y="-321.89" font-family="Arial" font-size="11.00">[CLS] query [SEP] doc [SEP]</text>
+<text text-anchor="middle" x="127" y="-308.69" font-family="Arial" font-size="11.00">↓</text>
+<text text-anchor="middle" x="127" y="-295.49" font-family="Arial" font-size="11.00">BERT Model</text>
+<text text-anchor="middle" x="127" y="-282.29" font-family="Arial" font-size="11.00">↓</text>
+<text text-anchor="middle" x="127" y="-269.09" font-family="Arial" font-size="11.00">Relevance Score</text>
+</g>
+<!-- ce&#45;&gt;ce_process -->
+<g id="edge6" class="edge">
+<title>ce-&gt;ce_process</title>
+<path fill="none" stroke="#333333" stroke-dasharray="5,2" d="M139.67,-433.32C138.01,-416.75 136.08,-397.37 134.23,-378.83"/>
+<polygon fill="#333333" stroke="#333333" points="137.72,-378.52 133.24,-368.92 130.75,-379.22 137.72,-378.52"/>
+</g>
+<!-- output -->
+<g id="node13" class="node">
+<title>output</title>
+<path fill="#ffebee" stroke="#d32f2f" stroke-width="2" d="M597.92,-348.79C597.92,-348.79 464.08,-348.79 464.08,-348.79 458.08,-348.79 452.08,-342.79 452.08,-336.79 452.08,-336.79 452.08,-273.99 452.08,-273.99 452.08,-267.99 458.08,-261.99 464.08,-261.99 464.08,-261.99 597.92,-261.99 597.92,-261.99 603.92,-261.99 609.92,-267.99 609.92,-273.99 609.92,-273.99 609.92,-336.79 609.92,-336.79 609.92,-342.79 603.92,-348.79 597.92,-348.79"/>
+<text text-anchor="middle" x="531" y="-334.89" font-family="Arial" font-size="11.00">Re-ranked Documents</text>
+<text text-anchor="middle" x="531" y="-321.69" font-family="Arial" font-size="11.00">with Relevance Scores</text>
+<text text-anchor="middle" x="531" y="-295.49" font-family="Arial" font-size="11.00">Interactive Visualizations</text>
+<text text-anchor="middle" x="531" y="-269.29" font-family="Arial" font-size="11.00">Downloadable JSON Results</text>
+</g>
+<!-- ce&#45;&gt;output -->
+<g id="edge8" class="edge">
+<title>ce-&gt;output</title>
+<path fill="none" stroke="#333333" d="M227.99,-433.36C234.67,-430.71 241.39,-428.3 248,-426.25 249.29,-425.85 438.8,-398.06 440,-397.45 458.86,-387.94 476.19,-373.04 490.56,-358.03"/>
+<polygon fill="#333333" stroke="#333333" points="493,-360.55 497.2,-350.82 487.85,-355.8 493,-360.55"/>
+<text text-anchor="middle" x="396.31" y="-408.15" font-family="Arial" font-size="9.00">scores</text>
+</g>
+<!-- llm&#45;&gt;output -->
+<g id="edge9" class="edge">
+<title>llm-&gt;output</title>
+<path fill="none" stroke="#333333" d="M674.8,-433.32C648.48,-410.09 615.93,-381.36 588.46,-357.11"/>
+<polygon fill="#333333" stroke="#333333" points="591.06,-354.74 581.25,-350.74 586.43,-359.98 591.06,-354.74"/>
+<text text-anchor="middle" x="663.72" y="-408.15" font-family="Arial" font-size="9.00">scores</text>
+</g>
+<!-- cohere&#45;&gt;output -->
+<g id="edge10" class="edge">
+<title>cohere-&gt;output</title>
+<path fill="none" stroke="#333333" d="M836.13,-433.28C831.37,-430.85 826.64,-428.48 822,-426.25 756.07,-394.51 679.49,-363.18 621.44,-340.51"/>
+<polygon fill="#333333" stroke="#333333" points="622.82,-337.3 612.23,-336.93 620.29,-343.82 622.82,-337.3"/>
+<text text-anchor="middle" x="812.19" y="-408.15" font-family="Arial" font-size="9.00">scores</text>
+</g>
+<!-- hybrid_process -->
+<g id="node8" class="node">
+<title>hybrid_process</title>
+<ellipse fill="#f3e5f5" stroke="black" cx="342" cy="-305.39" rx="85.67" ry="61.66"/>
+<text text-anchor="middle" x="342" y="-335.09" font-family="Arial" font-size="11.00">Hybrid Process:</text>
+<text text-anchor="middle" x="342" y="-321.89" font-family="Arial" font-size="11.00">Cross-Encoder Score</text>
+<text text-anchor="middle" x="342" y="-308.69" font-family="Arial" font-size="11.00">+</text>
+<text text-anchor="middle" x="342" y="-295.49" font-family="Arial" font-size="11.00">TF-IDF Similarity</text>
+<text text-anchor="middle" x="342" y="-282.29" font-family="Arial" font-size="11.00">↓</text>
+<text text-anchor="middle" x="342" y="-269.09" font-family="Arial" font-size="11.00">Weighted Average</text>
+</g>
+<!-- hybrid&#45;&gt;hybrid_process -->
+<g id="edge7" class="edge">
+<title>hybrid-&gt;hybrid_process</title>
+<path fill="none" stroke="#333333" stroke-dasharray="5,2" d="M342,-433.32C342,-416.75 342,-397.37 342,-378.83"/>
+<polygon fill="#333333" stroke="#333333" points="345.5,-378.93 342,-368.93 338.5,-378.93 345.5,-378.93"/>
+</g>
+<!-- hybrid&#45;&gt;output -->
+<g id="edge11" class="edge">
+<title>hybrid-&gt;output</title>
+<path fill="none" stroke="#333333" d="M397.79,-433.29C411.81,-421.91 426.66,-409.46 440,-397.45 453.89,-384.94 468.42,-370.89 481.69,-357.63"/>
+<polygon fill="#333333" stroke="#333333" points="484.13,-360.13 488.7,-350.57 479.17,-355.2 484.13,-360.13"/>
+<text text-anchor="middle" x="443.01" y="-408.15" font-family="Arial" font-size="9.00">scores</text>
+</g>
+<!-- ltr&#45;&gt;output -->
+<g id="edge12" class="edge">
+<title>ltr-&gt;output</title>
+<path fill="none" stroke="#333333" d="M531,-433.32C531,-411.39 531,-384.56 531,-361.23"/>
+<polygon fill="#333333" stroke="#333333" points="534.5,-361.25 531,-351.25 527.5,-361.25 534.5,-361.25"/>
+<text text-anchor="middle" x="544.25" y="-408.15" font-family="Arial" font-size="9.00">scores</text>
+</g>
+<!-- ndcg -->
+<g id="node9" class="node">
+<title>ndcg</title>
+<path fill="#ffecb3" stroke="black" d="M248.24,-144.77C248.24,-144.77 214.63,-169.43 214.63,-169.43 209.79,-172.98 198.96,-176.53 192.96,-176.53 192.96,-176.53 111.04,-176.53 111.04,-176.53 105.04,-176.53 94.21,-172.98 89.37,-169.43 89.37,-169.43 55.76,-144.77 55.76,-144.77 50.92,-141.22 50.92,-134.12 55.76,-130.57 55.76,-130.57 89.37,-105.9 89.37,-105.9 94.21,-102.35 105.04,-98.8 111.04,-98.8 111.04,-98.8 192.96,-98.8 192.96,-98.8 198.96,-98.8 209.79,-102.35 214.63,-105.9 214.63,-105.9 248.24,-130.57 248.24,-130.57 253.08,-134.12 253.08,-141.22 248.24,-144.77"/>
+<text text-anchor="middle" x="152" y="-147.57" font-family="Arial" font-size="11.00">NDCG@K</text>
+<text text-anchor="middle" x="152" y="-134.37" font-family="Arial" font-size="11.00">Normalized Discounted</text>
+<text text-anchor="middle" x="152" y="-121.17" font-family="Arial" font-size="11.00">Cumulative Gain</text>
+</g>
+<!-- mrr -->
+<g id="node10" class="node">
+<title>mrr</title>
+<path fill="#ffecb3" stroke="black" d="M427.83,-146C427.83,-146 404.86,-168.19 404.86,-168.19 400.54,-172.36 390.23,-176.53 384.23,-176.53 384.23,-176.53 327.77,-176.53 327.77,-176.53 321.77,-176.53 311.46,-172.36 307.14,-168.19 307.14,-168.19 284.17,-146 284.17,-146 279.86,-141.83 279.86,-133.5 284.17,-129.33 284.17,-129.33 307.14,-107.14 307.14,-107.14 311.46,-102.97 321.77,-98.8 327.77,-98.8 327.77,-98.8 384.23,-98.8 384.23,-98.8 390.23,-98.8 400.54,-102.97 404.86,-107.14 404.86,-107.14 427.83,-129.33 427.83,-129.33 432.14,-133.5 432.14,-141.83 427.83,-146"/>
+<text text-anchor="middle" x="356" y="-147.57" font-family="Arial" font-size="11.00">MRR</text>
+<text text-anchor="middle" x="356" y="-134.37" font-family="Arial" font-size="11.00">Mean Reciprocal</text>
+<text text-anchor="middle" x="356" y="-121.17" font-family="Arial" font-size="11.00">Rank</text>
+</g>
+<!-- precision -->
+<g id="node11" class="node">
+<title>precision</title>
+<path fill="#ffecb3" stroke="black" d="M598.26,-144.74C598.26,-144.74 579.17,-158.68 579.17,-158.68 574.32,-162.22 563.48,-165.75 557.48,-165.75 557.48,-165.75 504.52,-165.75 504.52,-165.75 498.52,-165.75 487.68,-162.22 482.83,-158.68 482.83,-158.68 463.74,-144.74 463.74,-144.74 458.89,-141.2 458.89,-134.13 463.74,-130.59 463.74,-130.59 482.83,-116.65 482.83,-116.65 487.68,-113.12 498.52,-109.58 504.52,-109.58 504.52,-109.58 557.48,-109.58 557.48,-109.58 563.48,-109.58 574.32,-113.12 579.17,-116.65 579.17,-116.65 598.26,-130.59 598.26,-130.59 603.11,-134.13 603.11,-141.2 598.26,-144.74"/>
+<text text-anchor="middle" x="531" y="-140.97" font-family="Arial" font-size="11.00">Precision@K</text>
+<text text-anchor="middle" x="531" y="-127.77" font-family="Arial" font-size="11.00">Top-K Accuracy</text>
+</g>
+<!-- map_score -->
+<g id="node12" class="node">
+<title>map_score</title>
+<path fill="#ffecb3" stroke="black" d="M760.36,-146.5C760.36,-146.5 740.86,-167.7 740.86,-167.7 736.8,-172.11 726.74,-176.53 720.74,-176.53 720.74,-176.53 673.26,-176.53 673.26,-176.53 667.26,-176.53 657.2,-172.11 653.14,-167.7 653.14,-167.7 633.64,-146.5 633.64,-146.5 629.58,-142.08 629.58,-133.25 633.64,-128.83 633.64,-128.83 653.14,-107.63 653.14,-107.63 657.2,-103.22 667.26,-98.8 673.26,-98.8 673.26,-98.8 720.74,-98.8 720.74,-98.8 726.74,-98.8 736.8,-103.22 740.86,-107.63 740.86,-107.63 760.36,-128.83 760.36,-128.83 764.42,-133.25 764.42,-142.08 760.36,-146.5"/>
+<text text-anchor="middle" x="697" y="-147.57" font-family="Arial" font-size="11.00">MAP</text>
+<text text-anchor="middle" x="697" y="-134.37" font-family="Arial" font-size="11.00">Mean Average</text>
+<text text-anchor="middle" x="697" y="-121.17" font-family="Arial" font-size="11.00">Precision</text>
+</g>
+<!-- output&#45;&gt;ndcg -->
+<g id="edge13" class="edge">
+<title>output-&gt;ndcg</title>
+<path fill="none" stroke="#333333" stroke-dasharray="1,5" d="M482.69,-261.23C469.61,-251.48 454.91,-242.13 440,-235.73 368.38,-204.97 340.21,-233.68 267,-206.93 249.57,-200.56 231.82,-191.52 215.64,-182.09"/>
+<polygon fill="#333333" stroke="#333333" points="217.47,-179.1 207.09,-176.97 213.87,-185.11 217.47,-179.1"/>
+</g>
+<!-- output&#45;&gt;mrr -->
+<g id="edge14" class="edge">
+<title>output-&gt;mrr</title>
+<path fill="none" stroke="#333333" stroke-dasharray="1,5" d="M485.48,-261.28C460.64,-237.76 429.88,-208.63 404.58,-184.67"/>
+<polygon fill="#333333" stroke="#333333" points="406.99,-182.14 397.33,-177.8 402.18,-187.22 406.99,-182.14"/>
+</g>
+<!-- output&#45;&gt;precision -->
+<g id="edge15" class="edge">
+<title>output-&gt;precision</title>
+<path fill="none" stroke="#333333" stroke-dasharray="1,5" d="M531,-261.28C531,-235.28 531,-202.44 531,-177.3"/>
+<polygon fill="#333333" stroke="#333333" points="534.5,-177.5 531,-167.5 527.5,-177.5 534.5,-177.5"/>
+</g>
+<!-- output&#45;&gt;map_score -->
+<g id="edge16" class="edge">
+<title>output-&gt;map_score</title>
+<path fill="none" stroke="#333333" stroke-dasharray="1,5" d="M574.18,-261.28C598.09,-237.41 627.77,-207.78 651.97,-183.62"/>
+<polygon fill="#333333" stroke="#333333" points="654.27,-186.27 658.88,-176.73 649.33,-181.31 654.27,-186.27"/>
+</g>
+<!-- streamlit -->
+<g id="node14" class="node">
+<title>streamlit</title>
+<path fill="#f5f5f5" stroke="black" d="M901.24,-155.67C901.24,-155.67 818.76,-155.67 818.76,-155.67 812.76,-155.67 806.76,-149.67 806.76,-143.67 806.76,-143.67 806.76,-131.67 806.76,-131.67 806.76,-125.67 812.76,-119.67 818.76,-119.67 818.76,-119.67 901.24,-119.67 901.24,-119.67 907.24,-119.67 913.24,-125.67 913.24,-131.67 913.24,-131.67 913.24,-143.67 913.24,-143.67 913.24,-149.67 907.24,-155.67 901.24,-155.67"/>
+<text text-anchor="middle" x="860" y="-140.97" font-family="Arial" font-size="11.00">Streamlit Frontend</text>
+<text text-anchor="middle" x="860" y="-127.77" font-family="Arial" font-size="11.00">Modern UI &amp; Tabs</text>
+</g>
+<!-- output&#45;&gt;streamlit -->
+<g id="edge17" class="edge">
+<title>output-&gt;streamlit</title>
+<path fill="none" stroke="#333333" d="M610.68,-280.77C661.16,-264.01 726.74,-238.84 780,-206.93 800.03,-194.93 820.02,-177.88 835,-163.82"/>
+<polygon fill="#333333" stroke="#333333" points="837.32,-166.45 842.12,-157 832.47,-161.4 837.32,-166.45"/>
+<text text-anchor="middle" x="774.46" y="-217.63" font-family="Arial" font-size="9.00">results</text>
+</g>
+<!-- fastapi -->
+<g id="node15" class="node">
+<title>fastapi</title>
+<path fill="#f5f5f5" stroke="black" d="M880.49,-52C880.49,-52 803.51,-52 803.51,-52 797.51,-52 791.51,-46 791.51,-40 791.51,-40 791.51,-28 791.51,-28 791.51,-22 797.51,-16 803.51,-16 803.51,-16 880.49,-16 880.49,-16 886.49,-16 892.49,-22 892.49,-28 892.49,-28 892.49,-40 892.49,-40 892.49,-46 886.49,-52 880.49,-52"/>
+<text text-anchor="middle" x="842" y="-37.3" font-family="Arial" font-size="11.00">FastAPI Backend</text>
+<text text-anchor="middle" x="842" y="-24.1" font-family="Arial" font-size="11.00">Production API</text>
+</g>
+<!-- streamlit&#45;&gt;fastapi -->
+<g id="edge18" class="edge">
+<title>streamlit-&gt;fastapi</title>
+<path fill="none" stroke="#333333" stroke-width="2" d="M863.69,-119.35C865.9,-105.69 867.52,-86.3 863,-70 862.28,-67.41 861.31,-64.81 860.19,-62.28"/>
+<polygon fill="#333333" stroke="#333333" stroke-width="2" points="864.1,-62.17 856.31,-54.98 857.92,-65.46 864.1,-62.17"/>
+<text text-anchor="middle" x="882.59" y="-72.7" font-family="Arial" font-size="9.00">API calls</text>
+</g>
+<!-- plotly -->
+<g id="node16" class="node">
+<title>plotly</title>
+<path fill="#f5f5f5" stroke="black" d="M983.54,-52C983.54,-52 922.46,-52 922.46,-52 916.46,-52 910.46,-46 910.46,-40 910.46,-40 910.46,-28 910.46,-28 910.46,-22 916.46,-16 922.46,-16 922.46,-16 983.54,-16 983.54,-16 989.54,-16 995.54,-22 995.54,-28 995.54,-28 995.54,-40 995.54,-40 995.54,-46 989.54,-52 983.54,-52"/>
+<text text-anchor="middle" x="953" y="-37.3" font-family="Arial" font-size="11.00">Plotly Charts</text>
+<text text-anchor="middle" x="953" y="-24.1" font-family="Arial" font-size="11.00">Interactive Viz</text>
+</g>
+<!-- streamlit&#45;&gt;plotly -->
+<g id="edge20" class="edge">
+<title>streamlit-&gt;plotly</title>
+<path fill="none" stroke="#333333" stroke-dasharray="1,5" d="M875.78,-119.42C890.47,-103.35 912.58,-79.19 929.38,-60.82"/>
+<polygon fill="#333333" stroke="#333333" points="931.96,-63.19 936.12,-53.45 926.79,-58.46 931.96,-63.19"/>
+<text text-anchor="middle" x="929.02" y="-72.7" font-family="Arial" font-size="9.00">data</text>
+</g>
+<!-- fastapi&#45;&gt;streamlit -->
+<g id="edge19" class="edge">
+<title>fastapi-&gt;streamlit</title>
+<path fill="none" stroke="#333333" stroke-width="2" d="M825.02,-52.22C818.85,-60.55 814.13,-70.89 817.48,-80.8 821.12,-91.6 827.77,-101.97 834.76,-110.77"/>
+<polygon fill="#333333" stroke="#333333" stroke-width="2" points="830.93,-111.68 840.08,-117.03 836.27,-107.14 830.93,-111.68"/>
+<text text-anchor="middle" x="838.24" y="-72.7" font-family="Arial" font-size="9.00">responses</text>
+</g>
+<!-- legend_neural -->
+<g id="node17" class="node">
+<title>legend_neural</title>
+<path fill="#e8f5e8" stroke="black" d="M729.82,-649.95C729.82,-649.95 660.18,-649.95 660.18,-649.95 654.18,-649.95 648.18,-643.95 648.18,-637.95 648.18,-637.95 648.18,-625.95 648.18,-625.95 648.18,-619.95 654.18,-613.95 660.18,-613.95 660.18,-613.95 729.82,-613.95 729.82,-613.95 735.82,-613.95 741.82,-619.95 741.82,-625.95 741.82,-625.95 741.82,-637.95 741.82,-637.95 741.82,-643.95 735.82,-649.95 729.82,-649.95"/>
+<text text-anchor="middle" x="695" y="-628.65" font-family="Arial" font-size="11.00">Neural Methods</text>
+</g>
+<!-- legend_api -->
+<g id="node18" class="node">
+<title>legend_api</title>
+<path fill="#fce4ec" stroke="black" d="M826.48,-649.95C826.48,-649.95 771.52,-649.95 771.52,-649.95 765.52,-649.95 759.52,-643.95 759.52,-637.95 759.52,-637.95 759.52,-625.95 759.52,-625.95 759.52,-619.95 765.52,-613.95 771.52,-613.95 771.52,-613.95 826.48,-613.95 826.48,-613.95 832.48,-613.95 838.48,-619.95 838.48,-625.95 838.48,-625.95 838.48,-637.95 838.48,-637.95 838.48,-643.95 832.48,-649.95 826.48,-649.95"/>
+<text text-anchor="middle" x="799" y="-628.65" font-family="Arial" font-size="11.00">API Services</text>
+</g>
+<!-- legend_hybrid -->
+<g id="node19" class="node">
+<title>legend_hybrid</title>
+<path fill="#f3e5f5" stroke="black" d="M941.97,-649.95C941.97,-649.95 868.03,-649.95 868.03,-649.95 862.03,-649.95 856.03,-643.95 856.03,-637.95 856.03,-637.95 856.03,-625.95 856.03,-625.95 856.03,-619.95 862.03,-613.95 868.03,-613.95 868.03,-613.95 941.97,-613.95 941.97,-613.95 947.97,-613.95 953.97,-619.95 953.97,-625.95 953.97,-625.95 953.97,-637.95 953.97,-637.95 953.97,-643.95 947.97,-649.95 941.97,-649.95"/>
+<text text-anchor="middle" x="905" y="-628.65" font-family="Arial" font-size="11.00">Hybrid Approach</text>
+</g>
+<!-- legend_ml -->
+<g id="node20" class="node">
+<title>legend_ml</title>
+<path fill="#fff8e1" stroke="black" d="M1045.85,-649.95C1045.85,-649.95 984.15,-649.95 984.15,-649.95 978.15,-649.95 972.15,-643.95 972.15,-637.95 972.15,-637.95 972.15,-625.95 972.15,-625.95 972.15,-619.95 978.15,-613.95 984.15,-613.95 984.15,-613.95 1045.85,-613.95 1045.85,-613.95 1051.85,-613.95 1057.85,-619.95 1057.85,-625.95 1057.85,-625.95 1057.85,-637.95 1057.85,-637.95 1057.85,-643.95 1051.85,-649.95 1045.85,-649.95"/>
+<text text-anchor="middle" x="1015" y="-628.65" font-family="Arial" font-size="11.00">Traditional ML</text>
+</g>
+<!-- legend_eval -->
+<g id="node21" class="node">
+<title>legend_eval</title>
+<path fill="#ffecb3" stroke="black" d="M1164.1,-637.95C1164.1,-637.95 1156.08,-643.95 1156.08,-643.95 1152.07,-646.95 1143.05,-649.95 1138.05,-649.95 1138.05,-649.95 1109.95,-649.95 1109.95,-649.95 1104.95,-649.95 1095.93,-646.95 1091.92,-643.95 1091.92,-643.95 1083.9,-637.95 1083.9,-637.95 1079.89,-634.95 1079.89,-628.95 1083.9,-625.95 1083.9,-625.95 1091.92,-619.95 1091.92,-619.95 1095.93,-616.95 1104.95,-613.95 1109.95,-613.95 1109.95,-613.95 1138.05,-613.95 1138.05,-613.95 1143.05,-613.95 1152.07,-616.95 1156.08,-619.95 1156.08,-619.95 1164.1,-625.95 1164.1,-625.95 1168.11,-628.95 1168.11,-634.95 1164.1,-637.95"/>
+<text text-anchor="middle" x="1124" y="-628.65" font-family="Arial" font-size="11.00">Evaluation</text>
+</g>
+</g>
+</svg>
