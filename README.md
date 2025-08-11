@@ -7,7 +7,7 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-green.svg)](https://fastapi.tiangolo.com)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-![System Context](sct.png)
+![System Context](Re-ranking-Playground-08-11-2025_05_20_PM.png)
 
 ## Features
 
